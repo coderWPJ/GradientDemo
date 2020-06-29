@@ -31,12 +31,11 @@ gradientBgView.layer.insertSublayer(gradientLayer, at: 0)
 我们再结合 [CSS3](https://www.runoob.com/css3/css3-gradients.html) 来理解下渐变，里面有详细解释常用的两种渐变（线性渐变和径向渐变），在这里我们仅讨论下线性渐变。其中线性渐变可以通过修改渐变方向或角度来修改梯度线（其实方向和角度是一一对应的）。
 >角度是指水平线和渐变线之间的角度，逆时针方向计算。换句话说，0deg 将创建一个从下到上的渐变，90deg 将创建一个从左到右的渐变。
 
-回到我们图中的控件来找渐变角度，过矩形中心点做一条竖直向上的轴线，与该轴线重合的方向为0度，过o点指向BD方向为90度，如下图:
 <div align=center>
     <img src="https://user-gold-cdn.xitu.io/2018/3/13/1621e27b8a2df26a?imageslim">
     <p align='center'><font color=' #A9A9A9'>图3</font></p>
 </div>
-
+回到我们图中的控件来找渐变角度，过矩形中心点做一条竖直向上的轴线，与该轴线重合的方向为0度，过o点指向BD方向为90度，如图4:
 在了解了渐变色角度后回到iOS开发中，幸运的是，我们常用到的是方向而非角度，即类似于Sketch中指定颜色起始点的方式来决定渐变角度，CAGradientLayer 的确已经做好了这些，但不同的是其渐变梯度线并非是我们指定的起点到终点，虽然看似都是从红色点至蓝色点的渐变且起始点相同，经过颜色对比可得知，CAGradientLayer梯度线并不是图中的AD，而是和AD垂直的MN，此时渐变角度也不再是期望的α，而是β。
 
 <div align=center>
