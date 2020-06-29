@@ -36,6 +36,7 @@ gradientBgView.layer.insertSublayer(gradientLayer, at: 0)
     <p align='center'><font color=' #A9A9A9'>图3</font></p>
 </div>
 回到我们图中的控件来找渐变角度，过矩形中心点做一条竖直向上的轴线，与该轴线重合的方向为0度，过o点指向BD方向为90度，如图4:
+
 在了解了渐变色角度后回到iOS开发中，幸运的是，我们常用到的是方向而非角度，即类似于Sketch中指定颜色起始点的方式来决定渐变角度，CAGradientLayer 的确已经做好了这些，但不同的是其渐变梯度线并非是我们指定的起点到终点，虽然看似都是从红色点至蓝色点的渐变且起始点相同，经过颜色对比可得知，CAGradientLayer梯度线并不是图中的AD，而是和AD垂直的MN，此时渐变角度也不再是期望的α，而是β。
 
 <div align=center>
