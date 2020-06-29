@@ -99,8 +99,8 @@ class MockGradientView: UIView {
 在了解了渐变色原理后可以清楚了解到，对于水平方向、竖直方向、正方形对角线方向的渐变我们依然可以正常使用，因为这些情况下设置起始点后渐变角度未改变。
 
 ### Demo 地址
-[https://github.com/coderWPJ/GradientDemo]()
+[https://github.com/coderWPJ/GradientDemo](https://github.com/coderWPJ/GradientDemo)
 
 ## 参考
-1. [https://www.runoob.com/css3/css3-gradients.html]()
-2. [https://juejin.im/post/5aa75da9f265da23994e3084]()
+1. [https://www.runoob.com/css3/css3-gradients.html](https://www.runoob.com/css3/css3-gradients.html)
+2. [https://juejin.im/post/5aa75da9f265da23994e3084](https://juejin.im/post/5aa75da9f265da23994e3084)
