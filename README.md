@@ -98,6 +98,11 @@ class MockGradientView: UIView {
 ### CAGradientLayer使用场景推荐：
 在了解了渐变色原理后可以清楚了解到，对于水平方向、竖直方向、正方形对角线方向的渐变我们依然可以正常使用，因为这些情况下设置起始点后渐变角度未改变。
 
+## 拓展：
+### 如果需求是固定渐变角度要如何处理？
+对于固定渐变角度，我们可以过矩形中心点画对应渐变角度的线，然后过A、D点做垂直于该线的辅助线，两个交点即为新的起始点。
+
+
 ### Demo 地址
 [https://github.com/coderWPJ/GradientDemo](https://github.com/coderWPJ/GradientDemo)
 
